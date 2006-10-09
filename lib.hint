@@ -1,0 +1,7 @@
+category: Libs
+requires: cygwin
+external-source: ktoblzcheck
+sdesc: "German bank account and bank code checker (runtime)"
+ldesc: "A library to check bank account numbers and bank codes (BLZ) of
+German Banks. It is based on the specifications of the 'Deutsche
+Bundesbank'."
