@@ -4,17 +4,17 @@ A library to check bank account numbers and bank codes (BLZ) of German
 Banks. It is based on the specifications of the 'Deutsche Bundesbank'.
 
 Runtime requirements:
-  cygwin-1.5.21-2
+  cygwin-1.5.22-1
 
 Build requirements:
-  cygwin-1.5.21-2
-  autoconf2.5-2.59-2
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20060709-1
-  cygport-0.2.5-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  libtool1.5-1.5.23a-1
   make-3.81-1
   sed-4.1.5-1
 
@@ -27,18 +27,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ktoblzcheck-1.11-X-src.tar.bz2
+  unpack ktoblzcheck-1.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ktoblzcheck-1.11-X.cygport all
+  cygport ./ktoblzcheck-1.12-X.cygport all
 
 This will create:
-  /usr/src/ktoblzcheck-1.11-X-src.tar.bz2
-  /usr/src/ktoblzcheck-1.11-X.tar.bz2
-  /usr/src/libktoblzcheck-devel-1.11-X.tar.bz2
-  /usr/src/libktoblzcheck1-1.11-X.tar.bz2
-  /usr/src/pyktoblzcheck-1.11-X.tar.bz2
+  /usr/src/ktoblzcheck-1.12-X-src.tar.bz2
+  /usr/src/ktoblzcheck-1.12-X.tar.bz2
+  /usr/src/libktoblzcheck-devel-1.12-X.tar.bz2
+  /usr/src/libktoblzcheck1-1.12-X.tar.bz2
+  /usr/src/pyktoblzcheck-1.12-X.tar.bz2
 
 -------------------------------------------
 
@@ -46,13 +46,13 @@ Files included in the binary packages:
 
 (ktoblzcheck)
   /usr/bin/ktoblzcheck.exe
-  /usr/share/doc/Cygwin/ktoblzcheck-1.11.README
-  /usr/share/doc/ktoblzcheck-1.11/AUTHORS
-  /usr/share/doc/ktoblzcheck-1.11/COPYING
-  /usr/share/doc/ktoblzcheck-1.11/ChangeLog
-  /usr/share/doc/ktoblzcheck-1.11/INSTALL
-  /usr/share/doc/ktoblzcheck-1.11/NEWS
-  /usr/share/doc/ktoblzcheck-1.11/README
+  /usr/share/doc/Cygwin/ktoblzcheck-1.12.README
+  /usr/share/doc/ktoblzcheck-1.12/AUTHORS
+  /usr/share/doc/ktoblzcheck-1.12/COPYING
+  /usr/share/doc/ktoblzcheck-1.12/ChangeLog
+  /usr/share/doc/ktoblzcheck-1.12/INSTALL
+  /usr/share/doc/ktoblzcheck-1.12/NEWS
+  /usr/share/doc/ktoblzcheck-1.12/README
   /usr/share/ktoblzcheck/bankdata.txt
   /usr/share/ktoblzcheck/bundesbank.pl
   /usr/share/ktoblzcheck/ibandata.txt
@@ -77,6 +77,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.12-1 -----
+Version bump.
 
 ----- version 1.11-1 -----
 Initial release for Cygwin.
