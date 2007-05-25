@@ -5,13 +5,15 @@ Banks. It is based on the specifications of the 'Deutsche Bundesbank'.
 
 Runtime requirements:
   cygwin-1.5.24-2
+(python-ktoblzcheck)
+  python-2.5.1-2
 
 Build requirements:
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.9-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
@@ -22,7 +24,7 @@ Canonical website:
   http://ktoblzcheck.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/ktoblzcheck/
+  http://downloads.sourceforge.net/ktoblzcheck/
 
 -------------------------------------------
 
@@ -38,7 +40,7 @@ This will create:
   /usr/src/ktoblzcheck-1.13-X.tar.bz2
   /usr/src/libktoblzcheck-devel-1.13-X.tar.bz2
   /usr/src/libktoblzcheck1-1.13-X.tar.bz2
-  /usr/src/pyktoblzcheck-1.13-X.tar.bz2
+  /usr/src/python-ktoblzcheck-1.13-X.tar.bz2
 
 -------------------------------------------
 
@@ -70,13 +72,16 @@ Files included in the binary packages:
   /usr/lib/pkgconfig/ktoblzcheck.pc
 
 (pyktoblzcheck)
-  /usr/lib/python2.4/site-packages/ktoblzcheck.py
-  /usr/lib/python2.4/site-packages/ktoblzcheck.pyc
-  /usr/lib/python2.4/site-packages/ktoblzcheck.pyo
+  /usr/lib/python2.5/site-packages/ktoblzcheck.py
+  /usr/lib/python2.5/site-packages/ktoblzcheck.pyc
+  /usr/lib/python2.5/site-packages/ktoblzcheck.pyo
 
 ------------------
 
 Port Notes:
+
+----- version 1.13-1 -----
+Rebuilt for python-2.5.
 
 ----- version 1.13-1 -----
 Version bump.
