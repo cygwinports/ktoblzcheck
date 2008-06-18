@@ -4,18 +4,18 @@ A library to check bank account numbers and bank codes (BLZ) of German
 Banks. It is based on the specifications of the 'Deutsche Bundesbank'.
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-15
 (python-ktoblzcheck)
-  python-2.5.1-3
+  python-2.5.2-1
 
 Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.8-1
+  binutils-20080523-1
+  cygport-0.3.11-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
   sed-4.1.5-2
 
@@ -28,18 +28,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ktoblzcheck-1.17-X-src.tar.bz2
+  unpack ktoblzcheck-1.18-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ktoblzcheck-1.17-X.cygport all
+  cygport ./ktoblzcheck-1.18-X.cygport all
 
 This will create:
-  /usr/src/ktoblzcheck-1.17-X-src.tar.bz2
-  /usr/src/ktoblzcheck-1.17-X.tar.bz2
-  /usr/src/libktoblzcheck-devel-1.17-X.tar.bz2
-  /usr/src/libktoblzcheck1-1.17-X.tar.bz2
-  /usr/src/python-ktoblzcheck-1.17-X.tar.bz2
+  /usr/src/ktoblzcheck-1.18-X-src.tar.bz2
+  /usr/src/ktoblzcheck-1.18-X.tar.bz2
+  /usr/src/libktoblzcheck-devel-1.18-X.tar.bz2
+  /usr/src/libktoblzcheck1-1.18-X.tar.bz2
+  /usr/src/python-ktoblzcheck-1.18-X.tar.bz2
 
 -------------------------------------------
 
@@ -47,13 +47,12 @@ Files included in the binary packages:
 
 (ktoblzcheck)
   /usr/bin/ktoblzcheck.exe
-  /usr/share/doc/Cygwin/ktoblzcheck-1.17.README
-  /usr/share/doc/ktoblzcheck-1.17/AUTHORS
-  /usr/share/doc/ktoblzcheck-1.17/COPYING
-  /usr/share/doc/ktoblzcheck-1.17/ChangeLog
-  /usr/share/doc/ktoblzcheck-1.17/INSTALL
-  /usr/share/doc/ktoblzcheck-1.17/NEWS
-  /usr/share/doc/ktoblzcheck-1.17/README
+  /usr/share/doc/ktoblzcheck-1.18/AUTHORS
+  /usr/share/doc/ktoblzcheck-1.18/COPYING
+  /usr/share/doc/ktoblzcheck-1.18/ChangeLog
+  /usr/share/doc/ktoblzcheck-1.18/INSTALL
+  /usr/share/doc/ktoblzcheck-1.18/NEWS
+  /usr/share/doc/ktoblzcheck-1.18/README
   /usr/share/ktoblzcheck/bankdata.txt
   /usr/share/ktoblzcheck/bundesbank.pl
   /usr/share/ktoblzcheck/ibandata.txt
@@ -78,6 +77,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.18-1 -----
+Version bump.
 
 ----- version 1.17-1 -----
 Version bump.
