@@ -3,6 +3,7 @@ inherit python
 DESCRIPTION="German bank account and bank code checker"
 HOMEPAGE="http://ktoblzcheck.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+PATCH_URI="1.18-python-lib.patch"
 
 abi=1
 PKG_NAMES="${PN} lib${PN}${abi} lib${PN}-devel python-${PN}"

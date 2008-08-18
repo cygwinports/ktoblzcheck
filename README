@@ -6,13 +6,13 @@ Banks. It is based on the specifications of the 'Deutsche Bundesbank'.
 Runtime requirements:
   cygwin-1.5.25-15
 (python-ktoblzcheck)
-  python-2.5.2-1
+  python-2.5.2-2
 
 Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
-  binutils-20080523-1
-  cygport-0.3.11-1
+  binutils-20080524-2
+  cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.2-2
@@ -28,18 +28,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ktoblzcheck-1.18-X-src.tar.bz2
+  unpack ktoblzcheck-1.19-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ktoblzcheck-1.18-X.cygport all
+  cygport ./ktoblzcheck-1.19-X.cygport all
 
 This will create:
-  /usr/src/ktoblzcheck-1.18-X-src.tar.bz2
-  /usr/src/ktoblzcheck-1.18-X.tar.bz2
-  /usr/src/libktoblzcheck-devel-1.18-X.tar.bz2
-  /usr/src/libktoblzcheck1-1.18-X.tar.bz2
-  /usr/src/python-ktoblzcheck-1.18-X.tar.bz2
+  /usr/src/ktoblzcheck-1.19-X-src.tar.bz2
+  /usr/src/ktoblzcheck-1.19-X.tar.bz2
+  /usr/src/libktoblzcheck-devel-1.19-X.tar.bz2
+  /usr/src/libktoblzcheck1-1.19-X.tar.bz2
+  /usr/src/python-ktoblzcheck-1.19-X.tar.bz2
 
 -------------------------------------------
 
@@ -47,13 +47,16 @@ Files included in the binary packages:
 
 (ktoblzcheck)
   /usr/bin/ktoblzcheck.exe
-  /usr/share/doc/ktoblzcheck-1.18/AUTHORS
-  /usr/share/doc/ktoblzcheck-1.18/COPYING
-  /usr/share/doc/ktoblzcheck-1.18/ChangeLog
-  /usr/share/doc/ktoblzcheck-1.18/INSTALL
-  /usr/share/doc/ktoblzcheck-1.18/NEWS
-  /usr/share/doc/ktoblzcheck-1.18/README
+  /usr/share/doc/ktoblzcheck-1.19/AUTHORS
+  /usr/share/doc/ktoblzcheck-1.19/COPYING
+  /usr/share/doc/ktoblzcheck-1.19/ChangeLog
+  /usr/share/doc/ktoblzcheck-1.19/INSTALL
+  /usr/share/doc/ktoblzcheck-1.19/NEWS
+  /usr/share/doc/ktoblzcheck-1.19/README
   /usr/share/ktoblzcheck/bankdata.txt
+  /usr/share/ktoblzcheck/bankdata_20080303.txt
+  /usr/share/ktoblzcheck/bankdata_20080609.txt
+  /usr/share/ktoblzcheck/bankdata_20080908.txt
   /usr/share/ktoblzcheck/bundesbank.pl
   /usr/share/ktoblzcheck/ibandata.txt
   /usr/share/ktoblzcheck/online_update.pl
@@ -77,6 +80,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.19-1 -----
+Version bump.
 
 ----- version 1.18-1 -----
 Version bump.
