@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libktoblzcheck1
+requires: libktoblzcheck1
 external-source: ktoblzcheck
 sdesc: "German bank account and bank code checker (development)"
 ldesc: "A library to check bank account numbers and bank codes (BLZ) of
