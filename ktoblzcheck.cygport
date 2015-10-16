@@ -1,7 +1,7 @@
 inherit python
 
 NAME="ktoblzcheck"
-VERSION=1.19
+VERSION=1.44
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="German bank account and bank code checker"
@@ -16,11 +16,14 @@ ktoblzcheck_CATEGORY="Utils"
 ktoblzcheck_CONTENTS="usr/bin/*.exe usr/share/man/man1/"
 libktoblzcheck1_REQUIRES="libktoblzcheck-common"
 libktoblzcheck1_CONTENTS="usr/bin/cygktoblzcheck-1.dll"
-libktoblzcheck_common_REQUIRES="usr/share/doc/ usr/share/${NAME}/"
+libktoblzcheck_common_CONTENTS="usr/share/doc/ usr/share/${NAME}/"
 libktoblzcheck_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+python_ktoblzcheck_REQUIRES="libktoblzcheck1" # ctypes
 python_ktoblzcheck_CONTENTS="${PYTHON_SITELIB#/}"
 
 DIFF_EXCLUDES="online_update.pl"
+
+CYGCONF_ARGS="ac_cv_header_windows_h=no"
 
 src_install() {
 	cd ${B}
