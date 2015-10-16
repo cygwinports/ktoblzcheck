@@ -1,0 +1,30 @@
+inherit python
+
+NAME="ktoblzcheck"
+VERSION=1.19
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="German bank account and bank code checker"
+DESCRIPTION="A library to check bank account numbers and bank codes (BLZ) of
+German Banks. It is based on the specifications of the 'Deutsche Bundesbank'."
+HOMEPAGE="http://ktoblzcheck.sourceforge.net/"
+SRC_URI="mirror://sourceforge/ktoblzcheck/ktoblzcheck-${VERSION}.tar.gz"
+PATCH_URI="1.18-python-lib.patch"
+
+PKG_NAMES="${NAME} lib${NAME}1 lib${NAME}-common lib${NAME}-devel python-${NAME}"
+ktoblzcheck_CATEGORY="Utils"
+ktoblzcheck_CONTENTS="usr/bin/*.exe usr/share/man/man1/"
+libktoblzcheck1_REQUIRES="libktoblzcheck-common"
+libktoblzcheck1_CONTENTS="usr/bin/cygktoblzcheck-1.dll"
+libktoblzcheck_common_REQUIRES="usr/share/doc/ usr/share/${NAME}/"
+libktoblzcheck_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+python_ktoblzcheck_CONTENTS="${PYTHON_SITELIB#/}"
+
+DIFF_EXCLUDES="online_update.pl"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	python_optimize ${PYTHON_SITELIB}
+}

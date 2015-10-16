@@ -1,6 +1,0 @@
-category: Utils
-requires: libktoblzcheck1
-sdesc: "German bank account and bank code checker (utility)"
-ldesc: "A library to check bank account numbers and bank codes (BLZ) of
-German Banks. It is based on the specifications of the 'Deutsche
-Bundesbank'."
