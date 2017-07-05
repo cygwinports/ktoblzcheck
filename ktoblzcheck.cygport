@@ -1,7 +1,7 @@
-inherit python
+inherit python2
 
 NAME="ktoblzcheck"
-VERSION=1.44
+VERSION=1.49
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="German bank account and bank code checker"
@@ -11,23 +11,17 @@ HOMEPAGE="http://ktoblzcheck.sourceforge.net/"
 SRC_URI="mirror://sourceforge/ktoblzcheck/ktoblzcheck-${VERSION}.tar.gz"
 PATCH_URI="1.18-python-lib.patch"
 
-PKG_NAMES="${NAME} lib${NAME}1 lib${NAME}-common lib${NAME}-devel python-${NAME}"
+PKG_NAMES="${NAME} lib${NAME}1 lib${NAME}-common lib${NAME}-devel python2-${NAME}"
 ktoblzcheck_CATEGORY="Utils"
 ktoblzcheck_CONTENTS="usr/bin/*.exe usr/share/man/man1/"
 libktoblzcheck1_REQUIRES="libktoblzcheck-common"
 libktoblzcheck1_CONTENTS="usr/bin/cygktoblzcheck-1.dll"
 libktoblzcheck_common_CONTENTS="usr/share/doc/ usr/share/${NAME}/"
 libktoblzcheck_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
-python_ktoblzcheck_REQUIRES="libktoblzcheck1" # ctypes
-python_ktoblzcheck_CONTENTS="${PYTHON_SITELIB#/}"
+python2_ktoblzcheck_REQUIRES="libktoblzcheck1" # ctypes
+python2_ktoblzcheck_OBSOLETES="python-ktoblzcheck"
+python2_ktoblzcheck_CONTENTS="${PYTHON2_SITELIB#/}"
 
 DIFF_EXCLUDES="online_update.pl"
 
 CYGCONF_ARGS="ac_cv_header_windows_h=no"
-
-src_install() {
-	cd ${B}
-	cyginstall
-
-	python_optimize ${PYTHON_SITELIB}
-}
